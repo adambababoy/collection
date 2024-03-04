@@ -19,7 +19,7 @@ if __name__ == "__main__":
     if WEATHERSTACK_API_KEY:
         params_weatherstack = {"query": location, "access_key": WEATHERSTACK_API_KEY}
         response_weatherstack = requests.get(
-            WEATHERSTACK_URL_BASE, params=params_weatherstack
+            WEATHERSTACK_URL_BASE, params=params_weatherstack#yes
         )
 if not weather_data:
         raise ValueError("No API keys provided or no valid data returned.")
