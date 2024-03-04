@@ -21,3 +21,10 @@ if __name__ == "__main__":
         response_weatherstack = requests.get(
             WEATHERSTACK_URL_BASE, params=params_weatherstack
         )
+if not weather_data:
+        raise ValueError("No API keys provided or no valid data returned.")
+    return weather_data
+
+
+if __name__ == "__main__":
+    from pprint import pprint
