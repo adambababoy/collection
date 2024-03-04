@@ -9,7 +9,7 @@ if __name__ == "__main__":
     )
     soup = BeautifulSoup(requests.get(url).content, "html.parser")
     return soup.find("div", class_="main-horoscope").p.text
-
+#good
  if OPENWEATHERMAP_API_KEY:
         params_openweathermap = {"q": location, "appid": OPENWEATHERMAP_API_KEY}
         response_openweathermap = requests.get(
